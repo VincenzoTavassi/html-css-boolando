@@ -33,10 +33,7 @@ main {
     margin-top: 50px;
 }
 
-/* debug */
 .row {
-    background-color: brown;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -49,10 +46,19 @@ main {
     width: calc(100% / 3 - 15px);
     margin-bottom: 50px;
     text-align: center;
+    position: relative;
 }
 
 
+.column>.visibile {
+    display: block;
+}
+
 .column:hover>.visibile {
+    display: none;
+}
+
+.column>.invisibile {
     display: none;
 }
 
@@ -60,6 +66,83 @@ main {
     display: block;
 }
 
-.column>.invisibile {
-    display: none;
+.drawer {
+    background-color: white;
+    font-size: 0.9rem;
+}
+
+.drawer>h2 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.drawer>.promo-price {
+    color: red;
+    font-weight: bold;
+}
+
+.drawer>.normal-price {
+    text-decoration: line-through;
+}
+
+.column>.badges {
+    position: absolute;
+    bottom: 100px;
+}
+
+.badges>.tag {
+    color: white;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+
+.badges>.tag.discount {
+    background-color: red;
+}
+
+.badges>.tag.green {
+    background-color: green;
+
+}
+
+.column>.heart {
+    position: absolute;
+    background: white;
+    font-size: 2.5rem;
+    padding: 7px 14px;
+    top: 10px;
+    right: 0;
+}
+
+.column>.heart:hover {
+    color: red;
+}
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    min-height: 100px;
+    padding-bottom: 30px;
+}
+
+/* .left-footer-menu ul {
+    margin: 400px 0;
+} */
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer-menu ul li {
+    display: inline-block;
+    margin: 20px 10px 10px 0;
+}
+
+.left-footer-menu ul li:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
 }

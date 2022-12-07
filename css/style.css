@@ -1,0 +1,65 @@
+/* header */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #FF6900;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+#logo {
+    height: 50%;
+}
+
+/* content */
+
+main {
+    margin-top: 50px;
+}
+
+/* debug */
+.row {
+    background-color: brown;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.column {
+    background-color: lightgray;
+    width: calc(100% / 3 - 15px);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.column:hover>.visibile {
+    display: none;
+}
+
+.column:hover>.invisibile {
+    display: block;
+}
+
+.column>.invisibile {
+    display: none;
+}

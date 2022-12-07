@@ -57,19 +57,13 @@ main {
 }
 
 
-.column>.visibile {
-    display: block;
-}
-
-.column:hover>.visibile {
+.column:hover>.front-img,
+.column>.back-img {
     display: none;
 }
 
-.column>.invisibile {
-    display: none;
-}
-
-.column:hover>.invisibile {
+.column:hover>.back-img,
+.column>.front-img {
     display: block;
 }
 

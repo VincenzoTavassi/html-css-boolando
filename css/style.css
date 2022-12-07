@@ -20,7 +20,11 @@ a {
     color: inherit;
 }
 
-.header-nav {
+#links a {
+    margin-left: 10px;
+}
+
+#header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,10 +134,6 @@ footer {
     min-height: 100px;
     padding-bottom: 30px;
 }
-
-/* .left-footer-menu ul {
-    margin: 400px 0;
-} */
 
 footer nav {
     display: flex;

@@ -13,6 +13,7 @@ header {
     width: 100%;
     z-index: 1;
     top: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
 }
 
 a {
@@ -50,10 +51,8 @@ main {
 }
 
 .column {
-    background-color: lightgray;
     width: calc(100% / 3 - 15px);
     margin-bottom: 50px;
-    text-align: center;
     position: relative;
 }
 
@@ -75,14 +74,11 @@ main {
 }
 
 .drawer {
-    background-color: white;
-    font-size: 0.9rem;
-    text-align: left;
+    font-size: 1rem;
 }
 
 .drawer>h2 {
     font-weight: bold;
-    font-size: 1rem;
 }
 
 .drawer>.promo-price {
